@@ -1,7 +1,11 @@
-import React from "react";
-
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div>
+      <div className="h-screen flex justify-center items-center">
+        <div className="bg-primary w-24 h-24 rounded-md animate-spin"></div>
+      </div>
+    </div>
+  );
 };
 
 export default Home;

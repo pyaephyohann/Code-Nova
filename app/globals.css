@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+:root {
+  --font-outfit: "Outfit", sans-serif;
+  --font-caveat: "Caveat", cursive;
+}
+
+@theme {
+  --color-primary: #ffde42;
+  --color-codeWhite: #fbfcf8;
+}
+
+body {
+  background-color: #53cbf3;
+  font-family: var(--font-outfit);
+}
+
+.font-caveat {
+  font-family: var(--font-caveat);
+}
