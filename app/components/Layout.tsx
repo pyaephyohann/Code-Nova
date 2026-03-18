@@ -18,7 +18,7 @@ const Layout = ({ children }: Props) => {
 
   if (showSplash) return <SplashScreen />;
 
-  return <div>{children}</div>;
+  return <div className="mt-2 px-4">{children}</div>;
 };
 
 export default Layout;

@@ -1,20 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  --font-outfit: "Outfit", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
   --font-caveat: "Caveat", cursive;
 }
 
 @theme {
-  --color-primary: #ffde42;
+  --color-primary: #1a8fe3;
   --color-codeWhite: #fbfcf8;
+  --color-codeBlack: #000000;
 }
 
 body {
   background-color: #53cbf3;
-  font-family: var(--font-outfit);
+  font-family: var(--font-roboto);
 }
 
 .font-caveat {
   font-family: var(--font-caveat);
+}
+
+.font-roboto {
+  font-family: var(--font-roboto);
 }

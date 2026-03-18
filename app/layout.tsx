@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
-import { Outfit, Caveat } from "next/font/google";
+import { Roboto, Caveat } from "next/font/google";
 import "./globals.css";
 import Layout from "./components/Layout";
 
-const outfit = Outfit({
-  variable: "--font-outfit",
+const roboto = Roboto({
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-roboto",
 });
 
 const caveat = Caveat({
   variable: "--font-caveat",
+  display: "swap",
   subsets: ["latin"],
 });
 
@@ -25,8 +27,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${caveat.variable} ${outfit.variable} antialiased`}>
-        <div className="max-w-[393px] mx-auto overflow-hidden overflow-y-scroll scrollbar-hide bg-white">
+      <body className={`${caveat.variable} ${roboto.variable} antialiased`}>
+        <div className="max-w-[393px] mx-auto overflow-hidden overflow-y-scroll scrollbar-hide bg-white h-screen">
           <Layout>{children}</Layout>
         </div>
       </body>
