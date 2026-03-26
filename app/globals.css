@@ -3,10 +3,12 @@
 :root {
   --font-roboto: "Roboto", sans-serif;
   --font-caveat: "Caveat", cursive;
+  --font-arimo: "Arimo", sans-serif;
 }
 
 @theme {
   --color-primary: #1a8fe3;
+  --color-secondary: #ff7b4a;
   --color-codeWhite: #fbfcf8;
   --color-codeBlack: #000000;
 }
@@ -16,10 +18,20 @@ body {
   font-family: var(--font-roboto);
 }
 
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE & Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 .font-caveat {
   font-family: var(--font-caveat);
 }
 
-.font-roboto {
-  font-family: var(--font-roboto);
+.font-arimo {
+  font-family: var(--font-arimo);
 }

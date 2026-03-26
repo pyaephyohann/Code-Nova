@@ -62,7 +62,7 @@ const SignIn = () => {
           onChange={handleChange}
         />
         <Button disabled={isDisabled || isLoading} callBack={handleSignIn}>
-          {isLoading ? <Loading /> : "Create"}
+          {isLoading ? <Loading /> : "Log In"}
         </Button>
       </form>
       <div className="mt-6 text-[0.9rem] text-codeBlack/70">
